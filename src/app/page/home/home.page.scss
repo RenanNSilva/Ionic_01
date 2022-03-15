@@ -6,14 +6,8 @@
   font-size: 2rem;
   font-weight: bold;
   border: 1px dotted rgb(73, 73, 73);
-  border-radius: .3rem;
+  border-radius: 0 0 0.3rem 0.3rem;
 }
-
-
-.grid {
-  display: flex;
-}
-
 
 .grid-item {
   display: flex;
@@ -21,18 +15,28 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: .8rem;
+  font-size: 0.8rem;
   background: linear-gradient(rgb(90, 148, 196), rgb(25, 60, 88));
-  color: white;
-  margin: .25rem;
-  padding: .5rem;
+  color: yellow;
+  margin: 0.25rem;
+  padding: 0.5rem;
   width: 33%;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
+}
+
+.grid-item:first-child {
+  margin-left: 0;
+}
+
+.grid-item:last-child {
+  margin-right: 0;
 }
 
 .grid-item ion-icon {
   font-size: 3rem;
-  margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
 }
 
-
+ion-slides {
+  border-radius: 0.3rem 0.3rem 0 0;
+}
