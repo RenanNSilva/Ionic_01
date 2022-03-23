@@ -11,7 +11,7 @@ import { AngularFireAuth } from '@angular/fire/compat/auth';
 export class ProfilePage implements OnInit {
 
   // Variável que armazena dados do usuário logado
-  user: any;
+  public userData: any;
 
   constructor(
 
@@ -24,24 +24,9 @@ export class ProfilePage implements OnInit {
     // Verifica se esta logado
     this.auth.authState.subscribe(user => {
       if (user) {
-        this.user = user;
-
-        // Converte as datas do perfil para JavaScript
-        const createdAt = new Date(this.user.metadata.createdAt);
-        const lastLoginAt = new Date(this.user.metadata.lastLoginAt);
-
-
-
-
-
-        console.log(createdAt, lastLoginAt);
+        this.userData = user;
       }
     });
-
-  }
-
-  // Envia usuário para perfil do Google
-  toGoogle() {
 
   }
 
