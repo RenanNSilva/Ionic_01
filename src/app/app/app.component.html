@@ -4,7 +4,7 @@
       <ion-content>
         <ion-list id="inbox-list">
           <ion-list-header>YouMents</ion-list-header>
-          <ion-note>Ajuda e suporte</ion-note>
+          <ion-note>SOCORRO</ion-note>
 
           <ion-menu-toggle auto-hide="false">
 
@@ -35,13 +35,13 @@
 
             <ion-item routerDirection="root" routerLink="/sobre" lines="none" detail="false" routerLinkActive="selected">
               <ion-icon slot="start" ios="information-circle-outline" md="information-circle-sharp"></ion-icon>
-              <ion-label>Sobre</ion-label>
+              <ion-label>ABOUT</ion-label>
             </ion-item>
 
             <ion-item-divider></ion-item-divider>
 
             <!-- Se tem usuário logado, exibe o bloco dentro da div abaixo. -->
-            <div *ngIf="auth.user | async as user; else showLogin">
+            <div *ngIf="user; else showLogin">
 
               <ion-item routerDirection="root" routerLink="/usuario/perfil" lines="none" detail="false" routerLinkActive="selected">
                 <ion-thumbnail slot="start">
