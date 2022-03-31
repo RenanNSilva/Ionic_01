@@ -1,12 +1,15 @@
 .app-name {
-  background-color: steelblue;
+  background: linear-gradient(rgb(255, 255, 255), rgb(152, 56, 249));
   color: rgb(255, 255, 255);
   margin: 0;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 1px rgb(224, 224, 224);
   font-size: 2rem;
   font-weight: bold;
-  border: 1px dotted rgb(73, 73, 73);
+  border: 1px dotted rgb(238, 0, 0);
   border-radius: 0 0 0.3rem 0.3rem;
+ border-style:solid;
+  border-width:medium;
+  border-color: rgb(152, 56, 249);
 }
 
 .grid-item {
@@ -16,7 +19,7 @@
   justify-content: center;
   text-align: center;
   font-size: 0.8rem;
-  background: linear-gradient(rgb(90, 148, 196), rgb(25, 60, 88));
+  background: linear-gradient(rgb(157, 1, 241), rgb(83, 16, 208));
   color: rgb(255, 255, 255);
   margin: 0.25rem;
   padding: 0.5rem;
@@ -40,3 +43,4 @@
 ion-slides {
   border-radius: 0.3rem 0.3rem 0 0;
 }
+
